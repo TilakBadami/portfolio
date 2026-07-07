@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tilak S Badami | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f6f9;
+color:#333;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:#0d6efd;
+position:sticky;
+top:0;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+border-radius:50%;
+}
+
+.logo h2{
+color:white;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:600;
+}
+
+nav a:hover{
+color:yellow;
+}
+
+.home{
+display:flex;
+justify-content:space-around;
+align-items:center;
+height:100vh;
+padding:50px;
+}
+
+.home-text{
+width:50%;
+}
+
+.home-text h1{
+font-size:45px;
+}
+
+.home-text span{
+color:#0d6efd;
+}
+
+.home-text h3{
+margin:20px 0;
+}
+
+.home-text p{
+line-height:30px;
+}
+
+.home-image img{
+width:300px;
+border-radius:50%;
+box-shadow:0 0 20px gray;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:12px 30px;
+background:#0d6efd;
+color:white;
+text-decoration:none;
+border-radius:8px;
+transition:.3s;
+}
+
+.btn:hover{
+background:#084298;
+}
+
+section{
+padding:80px;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+}
+
+.about-container{
+display:flex;
+justify-content:space-between;
+gap:40px;
+}
+
+.about-text{
+width:60%;
+line-height:30px;
+}
+
+.education{
+width:35%;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px lightgray;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+text-align:center;
+border-radius:10px;
+box-shadow:0 0 10px lightgray;
+transition:.3s;
+}
+
+.card:hover{
+background:#0d6efd;
+color:white;
+transform:translateY(-8px);
+}
+
+.project-container{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.project{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+transition:.3s;
+}
+
+.project:hover{
+transform:scale(1.05);
+}
+
+.contact{
+text-align:center;
+line-height:35px;
+}
+
+footer{
+background:#0d6efd;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+padding:20px;
+}
+
+.home{
+flex-direction:column;
+height:auto;
+text-align:center;
+}
+
+.home-text,
+.about-text,
+.education{
+width:100%;
+}
+
+.home-image img{
+margin-top:30px;
+width:220px;
+}
+
+.about-container{
+flex-direction:column;
+}
+
+.skills{
+grid-template-columns:1fr;
+}
+
+.project-container{
+grid-template-columns:1fr;
+}
+
+nav{
+margin-top:20px;
+}
+
+nav a{
+display:block;
+margin:10px 0;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+
+        <img src="profile.jpeg" alt="Profile" width="60" height="60">
+
+        <h2>Tilak S Badami</h2>
+
+    </div>
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#about">About</a>
+
+        <a href="#skills">Skills</a>
+
+        <a href="#projects">Projects</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+</header>
+
+<section id="home" class="home">
+
+    <div class="home-text">
+
+        <h1>Hello, I'm <span>Tilak S Badami</span></h1>
+
+        <h3>Electronics & Communication Engineer</h3>
+
+        <p>
+            Final-year Electronics and Communication Engineering student with a CGPA of 9. Passionate about Full Stack Development,Web Development,Embedded Systems, IoT, VLSI, Machine Learning, and Python programming. I enjoy developing innovative projects that solve real-world engineering problems.
+        </p>
+
+        <a href="#contact" class="btn">Contact Me</a>
+
+    </div>
+
+    <div class="home-image">
+
+        <img src="profile.jpeg" alt="Profile">
+
+    </div>
+
+</section>
+<section id="about">
+
+    <h1 class="title">About Me</h1>
+
+    <div class="about-container">
+
+        <div class="about-text">
+
+            <p>
+                Hello! I'm <b>Tilak S Badami</b>, a final-year Electronics and Communication Engineering student at Brindavan College of Engineering with a CGPA of <b>9</b>.
+            </p>
+
+            <p>
+                I am passionate about Full Stack Development,Web Development,Embedded Systems, IoT, VLSI, Machine Learning and Python Programming. I enjoy learning new technologies and building real-world engineering solutions.
+            </p>
+
+        </div>
+
+        <div class="education">
+
+            <h2>Education</h2>
+
+            <p><b>B.E (ECE)</b><br>
+            Brindavan College of Engineering<br>
+            CGPA : 9</p>
+
+            <p><b>PUC</b><br>
+            Percentage : 90%</p>
+
+            <p><b>SSLC</b><br>
+            Percentage : 82%</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="skills">
+
+<h1 class="title">Skills</h1>
+
+<div class="skills">
+<div class="card">HTML</div>
+
+<div class="card">CSS</div>
+
+<div class="card">C Programming</div>
+
+<div class="card">Python</div>
+
+<div class="card">Embedded Systems</div>
+
+<div class="card">IoT</div>
+
+<div class="card">VLSI</div>
+
+<div class="card">Verilog HDL</div>
+
+<div class="card">Machine Learning</div>
+
+<div class="card">Git & GitHub</div>
+
+<div class="card">Arduino IDE</div>
+
+</div>
+
+</section>
+<section id="projects">
+
+<h1 class="title">Projects</h1>
+
+<div class="project-container">
+
+<div class="project">
+
+<h2>Unmanned Surveillance Robot</h2>
+
+<p>
+Developed an Unmanned Surveillance Robot using ESP32-CAM and LoRa Technology for long-range communication and image-based monitoring.
+</p>
+
+</div>
+
+<div class="project">
+
+<h2>AHB to APB Bridge</h2>
+
+<p>
+Designed and verified an AHB to APB Bridge using Verilog HDL during VLSI training.
+</p>
+
+</div>
+
+<div class="project">
+
+<h2>Personal Portfolio Website</h2>
+
+<p>
+Designed and developed a responsive portfolio website using HTML and CSS.
+</p>
+
+</div>
+<div class="project">
+
+<h2>Grama Vasati Hotel Booking App</h2>
+
+<p>
+Developed an Android-based hotel booking application using Android Studio. The application enables users to explore hotels, check room availability, book accommodations, and manage their reservations. Implemented a clean user interface and used GitHub for project collaboration and version control.
+</p>
+
+</div>
+
+</div>
+
+</section>
+<section id="contact">
+
+<h1 class="title">Contact Me</h1>
+
+<div class="contact">
+
+<p><b>Name :</b> Tilak S Badami</p>
+
+<p><b>Email :</b> tilakbadami8@gmail.com</p>
+
+<p><b>Phone :</b> +91 8088628230</p>
+
+<p><b>LinkedIn :</b> linkedin.com/in/tilakbadami</p>
+
+<a href="mailto:tilakbadami8@gmail.com" class="btn">
+Email Me
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Tilak S Badami | All Rights Reserved
+</p>
+
+</footer>
+
+</body>
+
+</html>
